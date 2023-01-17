@@ -19,6 +19,7 @@ When('I enter correct login credentials', (dataTable) => {
 })
 Then('submit the information and validate welcome message', () => {
     cy.wait(2000)
+    //comment here
    cy.get("[type='button'").contains("Log in").click()
    cy.get('#nameofuser').should('have.text','Welcome jjmoncada')
 })
